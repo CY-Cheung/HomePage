@@ -7,10 +7,10 @@ import ClockDisplay from './pages/ClockDisplay.jsx';
 
 export default function Main() {
     return (
-        <Routes basename="/homepage">
-            <Route path='*' element={<Bookmarks />} />
-            <Route path='' element={<Bookmarks />} />
-            <Route path='clockdisplay' element={<ClockDisplay />} />
+        <Routes>
+            <Route path="*" element={<Bookmarks />} />
+            <Route path="" element={<Bookmarks />} />
+            <Route path="clockdisplay" element={<ClockDisplay />} />
         </Routes>
     );
 }

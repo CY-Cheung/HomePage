@@ -1,38 +1,90 @@
-.App {
-  text-align: center;
+ul {
+	list-style-type:none; 
+	padding-block: 1%;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+	margin-bottom:0px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+body {
+	background-color: black;
+	color: var(--bs-light);
+	position: relative;
+	max-width: 100%;
+    overflow-x: hidden;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+hr {
+	border: 1px solid var(--bs-secondary);
+	opacity: 50%;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+header {
+	top: 0;
+	z-index: 999999;
+	position: -webkit-sticky;
+  	position: sticky;
+	place-items: center;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	font-size: 30px;
+	font-weight: 1;
+	background-color: var(--bs-dark);
+	border-bottom: 3px solid var(--bs-primary);
+	height: 60px;
+	
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.HeaderHeight {
+	height: 60px;
+}
+nav {
+	height: 100vh;
+	z-index: 1;
+	top: 0;
+	left: 0;
+	background-color: var(--bs-dark);
+	font-size: 16px;
+	overflow-x: hidden;
+	position: fixed;
+}
+nav .bi {
+	padding-right: 1rem;
+	color: var(--bs-primary);
+	font-size: 150%;
+}
+nav h6 {
+	font-size: 120%;
+	text-transform: uppercase;
+	color: var(--bs-secondary);
+	padding-left: 3%;
+}
+nav li {
+	font-size: 100%;
+	padding-left: 10%;
+	padding-top: 10%;
+}
+nav a {
+	text-decoration: none;
+}
+main {
+	font-size: 12px;
+	position: relative;
+	left: 7rem;
+}
+main h1 {
+	font-size: 30px;
+	text-transform: uppercase;
+}
+.card {
+	background-color: var(--bs-black);
+	text-align: center;
+	font-size: 150%;
+}
+.card-header {
+	background-color: var(--bs-dark);
+	border-bottom: solid var(--bs-primary);
+}
+.card-footer {
+	background-color: var(--bs-dark);
+	border-top: solid var(--bs-primary);
 }

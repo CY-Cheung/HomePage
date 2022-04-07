@@ -9,8 +9,8 @@ export default function Main() {
     return (
         <Routes basename="/homepage">
             <Route path='*' element={<Bookmarks />} />
-            <Route path='/' element={<Bookmarks />} />
-            <Route path='/clockdisplay' element={<ClockDisplay />} />
+            <Route path='' element={<Bookmarks />} />
+            <Route path='clockdisplay' element={<ClockDisplay />} />
         </Routes>
     );
 }

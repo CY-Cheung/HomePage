@@ -13,7 +13,7 @@ import Main from './app/Main.jsx';
 export default function App() {
 	return (
 		<React.StrictMode>
-			<Router basename="/homepage">
+			<Router>
 				<div className="App">
 					<div className="row">
 						<HeaderBar />

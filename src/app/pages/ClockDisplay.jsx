@@ -1,11 +1,14 @@
 import '../../components/clock/clock.css'
 import '../../components/clock/clock.js'
+import { Link, NavLink, HeaderLink, Routes, Route } from 'react-router-dom';
+import ClockDisplay1 from './ClockDisplay1.jsx';
+import ClockDisplay2 from './ClockDisplay2.jsx';
 
 export default function ClockDisplay() {
     return (
         <main className="container col-lg-10 col-9">
             <div className="HeaderHeight"></div>
-            <div id="CardLink" className="container">
+            <div className="container">
                 <h1>Clock Display</h1>
                 <div className="card" style={{'width': '100%'}}>
                     <div className="card-header text-center h4">
@@ -33,6 +36,16 @@ export default function ClockDisplay() {
                         <p className="invisible">Invisible Text</p>
                     </div>
                 </div>
+                <div className="HeaderHeight"></div>
+                <h2>Clock</h2>
+                <div className="row">
+                    <NavLink to="clockdisplay1"><button className="button-rainbow m-3 col-3" style={{'aspect-ratio': '5'}}>Clock 1</button></NavLink>
+                    <NavLink to="clockdisplay2"><button className="button-rainbow m-3 col-3" style={{'aspect-ratio': '5'}}>Clock 2</button></NavLink>
+                </div>
+                <Routes>
+                    <Route path="clockdisplay1" element={<ClockDisplay1 />} />
+                    <Route path="clockdisplay2" element={<ClockDisplay2 />} />
+                </Routes>
             </div>
         </main>
     );

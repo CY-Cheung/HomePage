@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+
 import '../components/button/button.css'
 import '../components/button/button.js'
 import Clock1 from '../components/clock/Clock1.jsx';
@@ -12,8 +13,8 @@ export default function SideMenu() {
 
             <h6>Menu</h6>
             <div className="container py-3" style={{'text-align': 'center'}}>
-                <Link to=""><button className="button-rainbow" style={{'width': '100%'}}>Bookmarks</button></Link><br/>
-                <Link to="clockdisplay"><button className="button-rainbow" style={{'width': '100%'}}>Clock Display</button></Link><br/>
+                <NavLink to=""><button className="button-rainbow" style={{'width': '100%'}}>Bookmarks</button></NavLink><br/>
+                <NavLink to="clockdisplay"><button className="button-rainbow" style={{'width': '100%'}}>Clock Display</button></NavLink><br/>
             </div>
 
             <h6>Time</h6>

@@ -3,6 +3,8 @@ import {
     Bank2,
     BoundingBoxCircles,
     Box,
+    Clouds,
+    Discord,
     Download,
     EnvelopeFill,
     Facebook,
@@ -96,18 +98,18 @@ export default function CardIcon() {
                         </a>
                     </li>
                     <li className="col-1">
-                        <a href="https://www.instagram.com/" target="_blank" rel="noreferrer">
+                        <a href="https://console.cloud.google.com/" target="_blank" rel="noreferrer">
                         <div className="icon">
-                            <Instagram className="bi" />
-                            Instagram
+                            <Clouds className="bi" />
+                            Google Cloud
                         </div>
                         </a>
                     </li>
                     <li className="col-1">
-                        <a href="https://twitter.com/" target="_blank" rel="noreferrer">
+                        <a href="https://discord.com/" target="_blank" rel="noreferrer">
                         <div className="icon">
-                            <Twitter className="bi" />
-                            Twitter
+                            <Discord className="bi" />
+                            Discord
                         </div>
                         </a>
                     </li>

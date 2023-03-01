@@ -48,9 +48,30 @@ yarn build
 # Start backend production server
 yarn start
 
-# Commit, push and deploy to github page
+# Commit and push
 git add .
-git commit -m "text"
+git commit -m "commit changes"
 git push
-npm run deploy
+
+#Install gh-pages
+yarn add gh-pages 
+
+#Setup gh-pages: Modify package.json
+{
+  "name": "app-name",
++  "homepage": "https://<username>.github.io/<appname>",
+  // ...
+}
+{
+  "scripts": {
++   "predeploy": "npm run build",
++   "deploy": "gh-pages -d build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    // ...
+  }
+}
+
+#Deploy to GitHub page
+yarn deploy
 ```

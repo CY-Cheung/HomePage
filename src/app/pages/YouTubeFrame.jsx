@@ -1,13 +1,8 @@
-import CardIcon from './CardIcon.jsx'
+import React from 'react';
 
-export default function Bookmarks() {
+export default function YouTubeFrame() {
     return (
 		<main className="container col-lg-10 col-9">
-            <div className="HeaderHeight"></div>
-            <div className="container">
-                <h1>Bookmarks</h1>
-                <CardIcon />
-            </div>
             <div className="HeaderHeight"></div>
             <div className="container">
                 <h1>YouTube - Music</h1>
@@ -16,13 +11,12 @@ export default function Bookmarks() {
                         <p className="invisible">Invisible Text</p>
                     </div>
                     <ul className="container">
-                        <iframe width="100%" height="500"
+                        <iframe width="560" height="315" 
                             src="https://www.youtube-nocookie.com/embed/videoseries?list=PLDlClwMje8VxCaM2MNBWsvX6Gqf16ao4B" 
                             title="YouTube video player" 
                             frameborder="0" 
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                            allowfullscreen
-                            >
+                            allowfullscreen>
                         </iframe>
                     </ul>
                     <div className="card-footer">
@@ -33,3 +27,5 @@ export default function Bookmarks() {
         </main>
     );
 }
+
+

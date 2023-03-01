@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ### Environment Setup
 
-Install [nvm for Windows](https://github.com/coreybutler/nvm-windows) or [nvm](https://github.com/nvm-sh/nvm) for macOS and Linux.
+Install [nvm for Windows](https://nodejs.org/en/download/) or [nvm](https://github.com/nvm-sh/nvm) for macOS and Linux.
 
 ```bash
 # Install Node.js 16.14.2 LTS
